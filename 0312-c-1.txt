@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int score;
+    while(1)     //참일때반복, 2진수 => 0->거짓(false), 1->참 (true)
+                   //무한반복
+    {
+    printf("숫자 맞추기 게임입니다. 숫자를 입력해주세요");
+    scanf("%d", &score);
+    
+    if(score == 10){
+    printf("정답\n");
+    break;
+        
+    }
+    
+    else if(score > 10){
+        printf("너무 높아요\n");
+    }
+    else{
+        printf("너무 낮아요\n");
+    }
+}
+    return 0;
+}
