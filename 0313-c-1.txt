@@ -1,0 +1,68 @@
+#include <stdio.h>
+
+int main()
+{
+    int mon;
+    
+    printf("원하는 월을 입력하세요. ");
+    scanf("%d",&mon);
+    
+    //조건문 switch ~case
+    switch(mon){
+        case 1:
+        case 3:
+        case 5:
+        case 8:
+        case 10:
+        case 12:
+        printf("마지막 날짜는 31일입니다.\n");
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            printf("마지막 날짜는 30일입니다.\n");
+        case 2:
+            printf("마지막 날짜는 28일입니다.\n");
+            break;
+        default:
+            printf("입력 오류\n");
+            break;
+    }
+
+    return 0;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+
+int main()
+{
+    int menu;
+    
+    printf("원하는 메뉴를 입력하세요.(1:치킨 2:피자 3:떡볶이 4:햄버거 ");
+    scanf("%d",&menu);
+    
+    //조건문 switch ~case
+    switch(menu){
+        case 1:
+        printf("치킨 선택했습니다.\n");
+            break;
+        case 2:
+            printf("피자 선택했습니다.\n");
+            break;
+        case 3:
+            printf("떡볶이 선택했습니다..\n");
+            break;
+        case 4:
+            printf("햄버거 선택했습니다.");
+            break;
+        default:
+            printf("입력 오류\n");
+            break;
+    }
+
+    return 0;
+}
